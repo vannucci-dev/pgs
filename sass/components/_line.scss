@@ -1,0 +1,45 @@
+.line{
+    transform: rotate(-37deg);
+    position: absolute;
+    top: 0;
+    left: -51%;
+    height: 10px;
+    width: 300%;
+    background-color: var(--color-primary);
+
+    @include respond(phone){
+        top:55rem;
+        transform: rotate(-17deg);
+    }
+
+    &--small{
+        height: 5px;
+        left: -49%;
+
+        @include respond(phone){
+            
+            left: -45%;
+            
+        }
+    }
+}
+
+.eyes{
+    &__line{
+        position: absolute;
+        width: 130%;
+        height: 100rem;
+        border: solid 10px var(--color-primary);
+        z-index: -40;
+        transform: rotate(42deg);
+        top: -9%;
+        left: -43%;
+
+        
+
+        &--2{
+            transform: rotate(42deg) scale(0.97) translate(19px, 0px);
+            border: solid 5px var(--color-primary);
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.contact{
+
+    h1{
+        font-size: 6rem;
+        margin-top: 20rem;
+        margin-bottom: 10rem;
+    }
+
+    &__call{
+        display: flex;
+        justify-content: space-around;
+
+    }
+}

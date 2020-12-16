@@ -1,0 +1,70 @@
+.services{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    cursor: pointer;
+
+    &__box{
+        position: relative;
+        text-align: center;
+        width: 100%;
+        height: 25%;
+        background-image: url('img/DRAKOS Reel_ 2019_New (1).mp4');
+        transition: all .2s;
+    }
+    &__header{
+        font-size: 5rem;
+        text-transform: uppercase;
+        z-index: 3;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all .2s;
+
+    }
+    &__description{
+        opacity: 0;
+        font-size: 3rem;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all .2s;
+    }
+
+    &__video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        opacity: 0.3;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__istitutional{
+
+    }
+    &__ad{
+
+    }
+    &__external{
+
+    }
+    &__social{
+        
+    }
+
+    &__box:hover .services__header{
+        opacity: 0;
+    }
+    &__box:hover .services__description{
+        opacity: 1;
+    }
+
+    &__box:hover {
+        height: 50vh;
+        
+    }
+}
